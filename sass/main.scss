@@ -1,0 +1,207 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 539px,
+  md: 728px,
+  lg: 900px,
+  xl: 1021px,
+  xxl: 1300px,
+) !default;
+
+$container-max-widths: (
+  lg: 1000px,
+  xl: 1300px,
+  xxl: 1550px,
+) !default;
+
+@import '../bootstrap/bootstrap-4-grid/scss/grid.scss';
+@import 'base/typography';
+@import 'components/buttons';
+@import 'layout/header';
+@import 'layout/footer';
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == xs-phone {
+    @media (min-width: 23.43em) {
+      @content;
+    } //375px
+  }
+
+  @if $breakpoint == sm-phone {
+    @media (min-width: 33.68em) {
+      @content;
+    } //539px
+  }
+
+  @if $breakpoint == tab-port {
+    @media (min-width: 45.5em) {
+      @content;
+    } //728px
+  }
+
+  @if $breakpoint == tab-land {
+    @media (min-width: 56.25em) {
+      @content;
+    } //900px
+  }
+
+  @if $breakpoint == desktop {
+    @media (min-width: 63.81em) {
+      @content;
+    } //1021px
+  }
+
+  @if $breakpoint == lg-desktop {
+    @media (min-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == xl-desktop {
+    @media (min-width: 87.5em) {
+      @content;
+    } //1300px
+  }
+
+  @if $breakpoint == tab-port-to-tab-land {
+    @media (min-width: 45.5em) and (max-width: 56.25em) {
+      @content;
+    } //Between 728px-900px
+  }
+
+  @if $breakpoint == tablets-to-sm-desktops {
+    @media (min-width: 45.5em) and (max-width: 63.81em) {
+      @content;
+    } //Between 728px-1021px
+  }
+}
+
+//BASE
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  //PRIMARY COLORS
+  --teal: #68cbde;
+  --lime: #e7eb92;
+  --coral: #ee9985;
+  --grey-blue: #678ca1;
+
+  //SECONDARY COLORS
+  --background-white: #f5f2f4;
+  --light-grey: #c5d0d8;
+  --background-dark: #5e747d;
+  --black: #565e63;
+
+  // When necessary, I think we can add different shade variations of these colors to work with the site as well
+}
+
+/********************************************
+
+                    TYPOGRAPHY
+
+********************************************/
+html {
+  font-size: 59.375%;
+  //1rem = 9.5px
+  @include responsive(tab-port) {
+    font-size: 62.5%;
+    //1rem = 10px
+  }
+  @include responsive(lg-desktop) {
+    font-size: 68.75%;
+    //1rem = 11px
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: montserrat, sans-serif;
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #3f4b52;
+  padding: 1.5rem 0;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #678ba0;
+  padding: 0 0 0.8rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: #7a8a93;
+  padding: 0 0 0.8rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #67cbe0;
+  padding: 0 0 0.8rem;
+}
+p {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  font-weight: 300;
+  padding: 0 0 1.5rem;
+  color: #3f4b52;
+}
+
+/********************************************
+
+                    LAYOUT
+                
+********************************************/
+.site {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: montserrat, sans-serif;
+}
+
+.site-content {
+  flex: 1;
+}
+
+/********************************************
+
+                    UTILITIES
+                
+********************************************/
+.bg-accent {
+  background-color: var(--teal);
+}
+
+/********************************************
+
+                    HEADER
+                
+********************************************/
+
+/********************************************
+
+                    FOOTER
+                
+********************************************/
+
+/********************************************
+
+                    COMPONENTS
+                
+********************************************/
+
+//PRIMARY BUTTON
+//SECONDARY BUTTON
