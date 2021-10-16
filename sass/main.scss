@@ -115,6 +115,11 @@ html {
     font-size: 68.75%;
     //1rem = 11px
   }
+
+  @include responsive(xl-desktop) {
+    font-size: 75%;
+    //1rem = 12px
+  }
 }
 
 h1,
@@ -126,10 +131,13 @@ p {
 }
 
 h1 {
-  font-size: 3.6rem;
+  position: relative;
+  font-size: 2.3rem;
   font-weight: 700;
-  color: #3f4b52;
-  padding: 1.5rem 0;
+  line-height: 130%;
+  @include responsive(desktop) {
+    font-size: 3.6rem;
+  }
 }
 
 h2 {
@@ -190,6 +198,78 @@ p {
                     HEADER
                 
 ********************************************/
+
+/********************************************
+
+                SITE CONTENT
+                
+********************************************/
+
+//Jumbotron
+
+.jumbotron {
+  background: url('images/placeholder-img-1.jpg');
+  background-size: cover;
+  min-height: 35vh;
+  position: relative;
+  z-index: -1;
+  h1,
+  p {
+    color: white;
+  }
+
+  .jumbotron-content {
+    min-height: inherit;
+  }
+
+  .display-message {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: 2;
+    @include responsive(sm-phone) {
+      max-width: 80%;
+    }
+    @include responsive(tab-port) {
+      max-width: 60rem;
+    }
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 2, 1, 0.41);
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  @include responsive(tab-port) {
+    min-height: 40vh;
+  }
+}
+
+#display-text {
+  font-size: 4rem;
+  padding: 0 0 1.5rem;
+  @include responsive(tab-port) {
+    font-size: 5.4rem;
+    font-weight: 700;
+  }
+}
+
+.jumbotron-text {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 130%;
+  @include responsive(tab-port) {
+    font-size: 2.8rem;
+  }
+}
 
 /********************************************
 
