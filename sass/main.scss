@@ -9,15 +9,38 @@ $grid-breakpoints: (
 
 $container-max-widths: (
   lg: 1000px,
-  xl: 1300px,
-  xxl: 1550px,
+  xl: 1200px,
+  xxl: 1425px,
 ) !default;
 
-@import '../bootstrap/bootstrap-4-grid/scss/grid.scss';
-@import 'base/typography';
-@import 'components/buttons';
-@import 'layout/header';
-@import 'layout/footer';
+$spacer: 1rem !default;
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25,
+    ),
+    2: (
+      $spacer * 0.5,
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 1.5,
+    ),
+    5: (
+      $spacer * 3,
+    ),
+    6: (
+      $spacer * 3.5,
+    ),
+    7: (
+      $spacer * 4,
+    ),
+  ),
+  $spacers
+);
 
 @mixin responsive($breakpoint) {
   @if $breakpoint == xs-phone {
@@ -73,6 +96,13 @@ $container-max-widths: (
     } //Between 728px-1021px
   }
 }
+
+@import '../bootstrap/bootstrap-4-grid/scss/grid.scss';
+@import 'base/typography';
+@import 'components/buttons';
+@import 'components/spotlight-projects';
+@import 'layout/header';
+@import 'layout/footer';
 
 //BASE
 *,
@@ -135,12 +165,9 @@ p {
 
 h1 {
   position: relative;
-  font-size: 2.3rem;
+  font-size: 3.6rem;
   font-weight: 700;
   line-height: 130%;
-  @include responsive(desktop) {
-    font-size: 3.6rem;
-  }
 }
 
 h2 {
@@ -151,9 +178,9 @@ h2 {
 }
 
 h3 {
-  font-size: 2.8rem;
-  font-weight: 500;
-  color: #7a8a93;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--teal);
   padding: 0 0 0.8rem;
 }
 
@@ -164,11 +191,15 @@ h4 {
   padding: 0 0 0.8rem;
 }
 p {
-  font-size: 1.8rem;
-  line-height: 2.3rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 300;
   padding: 0 0 1.5rem;
   color: #3f4b52;
+  @include responsive(desktop) {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
 }
 
 /********************************************
@@ -186,6 +217,17 @@ p {
 .site-content {
   flex: 1;
   z-index: 0;
+}
+
+section {
+  padding: 4.5rem 0;
+}
+
+.container {
+  padding: 0 5%;
+  @include responsive(desktop) {
+    padding: 0 2%;
+  }
 }
 
 /********************************************
