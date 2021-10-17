@@ -96,6 +96,9 @@ $container-max-widths: (
   --background-dark: #5e747d;
   --black: #565e63;
 
+  //BACKGROUND
+  --light-teal: #b0dee7;
+
   // When necessary, I think we can add different shade variations of these colors to work with the site as well
 }
 
@@ -182,6 +185,7 @@ p {
 
 .site-content {
   flex: 1;
+  z-index: 0;
 }
 
 /********************************************
@@ -190,7 +194,12 @@ p {
                 
 ********************************************/
 .bg-accent {
-  background-color: var(--teal);
+  background: var(--teal);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
 }
 
 /********************************************
@@ -210,22 +219,19 @@ p {
 .jumbotron {
   background: url('images/placeholder-img-1.jpg');
   background-size: cover;
-  min-height: 35vh;
   position: relative;
+  padding: 3rem 0;
   z-index: -1;
   h1,
   p {
     color: white;
   }
 
-  .jumbotron-content {
-    min-height: inherit;
-  }
-
   .display-message {
     position: relative;
     max-width: 90%;
     margin: 0 auto;
+    text-align: center;
     z-index: 2;
     @include responsive(sm-phone) {
       max-width: 80%;
@@ -245,10 +251,6 @@ p {
     top: 0;
     left: 0;
     z-index: 1;
-  }
-
-  @include responsive(tab-port) {
-    min-height: 40vh;
   }
 }
 
@@ -271,6 +273,14 @@ p {
   }
 }
 
+.footer {
+  background: #f2f2f2;
+  padding: 5%;
+}
+.footer p {
+  padding: 0;
+  text-align: center;
+}
 /********************************************
 
                     FOOTER
@@ -284,4 +294,34 @@ p {
 ********************************************/
 
 //PRIMARY BUTTON
+.primary-btn {
+  display: block;
+  position: relative;
+  width: 18rem;
+  font-size: 1.6rem;
+  background: var(--teal);
+  padding: 1rem 0;
+  z-index: 2;
+  text-align: center;
+  border-radius: 25rem;
+  transition: all 0.2s ease-in-out;
+  &:link,
+  &:visited {
+    color: white;
+  }
+  &:hover {
+    background: var(--grey-blue);
+  }
+
+  @include responsive(desktop) {
+    &:hover {
+      box-shadow: 0 2px 10px rgba(65, 65, 65, 0.507);
+      transform: translateY(-4px);
+    }
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+}
+
 //SECONDARY BUTTON
