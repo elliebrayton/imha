@@ -4261,7 +4261,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .projects-img:hover .overlay {
   opacity: 1;
-  height: 100%; }
+  height: 100%;
+  cursor: pointer; }
   .projects-img:hover .overlay p {
     opacity: 1;
     display: block; }
