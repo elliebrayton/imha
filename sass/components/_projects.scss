@@ -1,5 +1,5 @@
-//SPOTLIGHT PROJECTS
-.spotlight-img {
+//ROJECTS
+.projects-img {
   display: block;
   max-width: 100%;
   position: relative;
@@ -54,13 +54,13 @@
   }
 }
 
-.spotlight-description {
+.project-description {
   @include responsive(desktop) {
     display: none;
   }
 }
 
-.spotlight-img:hover .overlay {
+.projects-img:hover .overlay {
   opacity: 1;
   height: 100%;
 
@@ -70,7 +70,7 @@
   }
 }
 
-.spotlight-img:hover img {
+.projects-img:hover img {
   @include responsive(desktop) {
     filter: blur(2px);
   }

@@ -38,6 +38,9 @@ $spacers: map-merge(
     7: (
       $spacer * 4,
     ),
+    8: (
+      $spacer * 6,
+    ),
   ),
   $spacers
 );
@@ -100,7 +103,7 @@ $spacers: map-merge(
 @import '../bootstrap/bootstrap-4-grid/scss/grid.scss';
 @import 'base/typography';
 @import 'components/buttons';
-@import 'components/spotlight-projects';
+@import 'components/projects';
 @import 'layout/header';
 @import 'layout/footer';
 
@@ -168,6 +171,7 @@ h1 {
   font-size: 3.6rem;
   font-weight: 700;
   line-height: 130%;
+  z-index: 2;
 }
 
 h2 {
