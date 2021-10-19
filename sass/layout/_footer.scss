@@ -1,0 +1,30 @@
+footer {
+    // background: #678ca1;
+    // color: #F5F2F4;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            flex-grow: 1;
+        }
+        .footer-nav {
+            flex-grow: 2;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    list-style-type: none;
+                    a {
+                        color: inherit;
+                    }
+                    .sub-nav {
+                        flex-direction: column;
+                        li {
+                            padding: 10px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

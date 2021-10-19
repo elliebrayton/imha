@@ -1,3 +1,30 @@
 header {
-    background: red;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            flex-grow: 1;
+        }
+        nav {
+            flex-grow: 2;
+            font-size: 1.6rem;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li {
+                    list-style-type: none;
+                    a {
+                        color: #3f4b52;
+                        transition: .25s;
+                    }
+                    a:hover {
+                        color: #678ba0;
+                        transition: .25s;
+                    }
+                }
+            }
+        }
+    }
 }

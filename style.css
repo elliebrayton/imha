@@ -4302,8 +4302,46 @@ a.text-dark:hover, a.text-dark:focus {
   letter-spacing: 1.2px;
   z-index: 2; }
 
-header {
-  background: red; }
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header .container .logo {
+    flex-grow: 1; }
+  header .container nav {
+    flex-grow: 2;
+    font-size: 1.6rem; }
+    header .container nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      header .container nav ul li {
+        list-style-type: none; }
+        header .container nav ul li a {
+          color: #3f4b52;
+          transition: .25s; }
+        header .container nav ul li a:hover {
+          color: #678ba0;
+          transition: .25s; }
+
+footer .container {
+  display: flex;
+  justify-content: space-between; }
+  footer .container .logo {
+    flex-grow: 1; }
+  footer .container .footer-nav {
+    flex-grow: 2; }
+    footer .container .footer-nav ul {
+      display: flex;
+      justify-content: space-between; }
+      footer .container .footer-nav ul li {
+        list-style-type: none; }
+        footer .container .footer-nav ul li a {
+          color: inherit; }
+        footer .container .footer-nav ul li .sub-nav {
+          flex-direction: column; }
+          footer .container .footer-nav ul li .sub-nav li {
+            padding: 10px 0; }
 
 *,
 *::before,
