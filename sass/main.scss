@@ -370,4 +370,29 @@ a:visited {
   }
 }
 
+.secondary-btn {
+  display: block;
+  font-size: 1.4rem;
+  background: var(--coral);
+  padding: 0.5rem 3rem;
+  border-radius: 25rem;
+  text-align: center;
+  &:link,
+  &:visited {
+    color: white;
+  }
+
+  &:hover {
+    background: var(--grey-blue);
+    box-shadow: 1px 1px 5px rgba(65, 65, 65, 0.507);
+    &:link,
+    &:visited {
+      color: white;
+    }
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
 //SECONDARY BUTTON

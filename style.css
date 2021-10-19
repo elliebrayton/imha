@@ -4555,3 +4555,20 @@ a:visited {
       transform: translateY(-4px); }
     .primary-btn:active {
       transform: translateY(1px); } }
+
+.secondary-btn {
+  display: block;
+  font-size: 1.4rem;
+  background: var(--coral);
+  padding: 0.5rem 3rem;
+  border-radius: 25rem;
+  text-align: center; }
+  .secondary-btn:link, .secondary-btn:visited {
+    color: white; }
+  .secondary-btn:hover {
+    background: var(--grey-blue);
+    box-shadow: 1px 1px 5px rgba(65, 65, 65, 0.507); }
+    .secondary-btn:hover:link, .secondary-btn:hover:visited {
+      color: white; }
+  .secondary-btn:active {
+    transform: translateY(1px); }
