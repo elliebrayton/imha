@@ -338,3 +338,20 @@ a:visited {
                     COMPONENTS
                 
 ********************************************/
+
+/********************************************
+
+                    BLOG PAGE
+                
+********************************************/
+
+.blog {
+  display: block !important;
+  text-align: left !important;
+
+  @include responsive(desktop) {
+    &:hover img {
+      filter: none !important;
+    }
+  }
+}

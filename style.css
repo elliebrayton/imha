@@ -4573,3 +4573,14 @@ a:visited {
                     COMPONENTS
                 
 ********************************************/
+/********************************************
+
+                    BLOG PAGE
+                
+********************************************/
+.blog {
+  display: block !important;
+  text-align: left !important; }
+  @media (min-width: 63.81em) {
+    .blog:hover img {
+      filter: none !important; } }
