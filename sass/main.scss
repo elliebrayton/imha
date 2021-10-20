@@ -388,3 +388,84 @@ a:visited {
     color: white;
   }
 }
+
+/********************************************
+
+                SITE CONTENT
+                
+********************************************/
+
+/********************************************
+
+                SITE FORMS
+                
+********************************************/
+
+//Newsletter
+// .form{
+
+// }
+.newsletter-form {
+  font-family: museo-sans, sans-serif;
+  position: relative;
+  width: 100%;
+  .form-group {
+    margin: 0.75rem 0;
+  }
+
+  .form-input {
+    font-size: 1.6rem;
+    font-family: inherit;
+    font-weight: 300;
+    color: var(--grey-blue);
+    padding: 1rem 1.5rem;
+    border-radius: 0.3rem;
+    background: white;
+    border: none;
+    display: block;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+      box-shadow: 1px 1px 5px rgba(103, 140, 161, 0.639);
+      border-bottom: 4px solid var(--grey-blue);
+    }
+
+    &:focus:invalid {
+      border-bottom: 4px solid var(--coral);
+    }
+  }
+
+  .form-label {
+    font-size: 1.2rem;
+    letter-spacing: 0.76px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 5px;
+    color: white;
+    transition: all 0.3s;
+  }
+
+  .form-input:placeholder-shown + .form-label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}
+
+.form-btn {
+  font-family: museo-sans, sans-serif;
+  color: white !important;
+  background: var(--coral) !important;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    background: var(--grey-blue) !important;
+    box-shadow: 1px 1px 5px rgba(65, 65, 65, 0.507) !important;
+    &:link,
+    &:visited {
+      color: white;
+    }
+  }
+}

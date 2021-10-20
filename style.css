@@ -4615,3 +4615,62 @@ a:visited {
   .pagination-link:visited:hover {
     background: var(--coral);
     color: white; }
+
+/********************************************
+
+                SITE CONTENT
+                
+********************************************/
+/********************************************
+
+                SITE FORMS
+                
+********************************************/
+.newsletter-form {
+  font-family: museo-sans, sans-serif;
+  position: relative;
+  width: 100%; }
+  .newsletter-form .form-group {
+    margin: 0.75rem 0; }
+  .newsletter-form .form-input {
+    font-size: 1.6rem;
+    font-family: inherit;
+    font-weight: 300;
+    color: var(--grey-blue);
+    padding: 1rem 1.5rem;
+    border-radius: 0.3rem;
+    background: white;
+    border: none;
+    display: block;
+    width: 100%; }
+    .newsletter-form .form-input:focus {
+      outline: none;
+      box-shadow: 1px 1px 5px rgba(103, 140, 161, 0.639);
+      border-bottom: 4px solid var(--grey-blue); }
+    .newsletter-form .form-input:focus:invalid {
+      border-bottom: 4px solid var(--coral); }
+  .newsletter-form .form-label {
+    font-size: 1.2rem;
+    letter-spacing: 0.76px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 5px;
+    color: white;
+    transition: all 0.3s; }
+  .newsletter-form .form-input:placeholder-shown + .form-label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem); }
+
+.form-btn {
+  font-family: museo-sans, sans-serif;
+  color: white !important;
+  background: var(--coral) !important;
+  border: none; }
+  .form-btn:hover {
+    cursor: pointer;
+    background: var(--grey-blue) !important;
+    box-shadow: 1px 1px 5px rgba(65, 65, 65, 0.507) !important; }
+    .form-btn:hover:link, .form-btn:hover:visited {
+      color: white; }
