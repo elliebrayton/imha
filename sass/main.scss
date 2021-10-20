@@ -346,8 +346,11 @@ a:visited {
 ********************************************/
 
 .blog {
-  display: block !important;
+  display: flex !important;
   text-align: left !important;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 35rem;
 
   @include responsive(desktop) {
     &:hover img {

@@ -4579,8 +4579,11 @@ a:visited {
                 
 ********************************************/
 .blog {
-  display: block !important;
-  text-align: left !important; }
+  display: flex !important;
+  text-align: left !important;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 35rem; }
   @media (min-width: 63.81em) {
     .blog:hover img {
       filter: none !important; } }
