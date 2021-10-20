@@ -4257,7 +4257,7 @@ a.text-dark:hover, a.text-dark:focus {
     position: relative;
     display: block;
     width: 100%;
-    min-height: 20rem;
+    height: 20rem;
     object-fit: cover;
     transition: 0.7s ease-in-out;
     border-radius: 3px;
@@ -4584,3 +4584,8 @@ a:visited {
   @media (min-width: 63.81em) {
     .blog:hover img {
       filter: none !important; } }
+
+.blog-link {
+  color: inherit; }
+  .blog-link:hover {
+    color: var(--background-dark); }

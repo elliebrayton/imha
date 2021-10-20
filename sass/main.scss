@@ -355,3 +355,10 @@ a:visited {
     }
   }
 }
+
+.blog-link {
+  color: inherit;
+  &:hover {
+    color: var(--background-dark);
+  }
+}
