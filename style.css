@@ -4593,13 +4593,17 @@ a:visited {
   .blog-link:hover {
     color: var(--background-dark); }
 
+.pagination {
+  width: 30rem;
+  margin: auto; }
+
 .pagination-link:link,
 .pagination-link:visited {
-  display: inline-block;
+  display: block;
   color: var(--coral);
   font-size: 1.2rem;
   font-weight: 700;
-  min-width: 10rem;
+  width: 10rem;
   text-align: center;
   letter-spacing: 0.1px;
   border: 1px var(--coral) solid;
