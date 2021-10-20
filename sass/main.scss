@@ -163,7 +163,7 @@ h2,
 h3,
 h4,
 p {
-  font-family: montserrat, sans-serif;
+  font-family: museo-sans, sans-serif;
 }
 
 h1 {
@@ -215,7 +215,7 @@ p {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  font-family: montserrat, sans-serif;
+  font-family: museo-sans, sans-serif;
 }
 
 .site-content {
@@ -363,5 +363,23 @@ a:visited {
   color: inherit;
   &:hover {
     color: var(--background-dark);
+  }
+}
+
+.pagination-link:link,
+.pagination-link:visited {
+  display: inline-block;
+  color: var(--coral);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  border: 1px var(--coral) solid;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem 0.2rem;
+  transition: 0.2s all;
+  &:hover {
+    background: var(--coral);
+    color: white;
   }
 }

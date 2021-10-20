@@ -4422,7 +4422,7 @@ h2,
 h3,
 h4,
 p {
-  font-family: montserrat, sans-serif; }
+  font-family: museo-sans, sans-serif; }
 
 h1 {
   position: relative;
@@ -4469,7 +4469,7 @@ p {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  font-family: montserrat, sans-serif; }
+  font-family: museo-sans, sans-serif; }
 
 .site-content {
   flex: 1;
@@ -4592,3 +4592,20 @@ a:visited {
   color: inherit; }
   .blog-link:hover {
     color: var(--background-dark); }
+
+.pagination-link:link,
+.pagination-link:visited {
+  display: inline-block;
+  color: var(--coral);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  border: 1px var(--coral) solid;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem 0.2rem;
+  transition: 0.2s all; }
+  .pagination-link:link:hover,
+  .pagination-link:visited:hover {
+    background: var(--coral);
+    color: white; }
