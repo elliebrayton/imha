@@ -464,3 +464,15 @@ a:visited {
                 SIDEBAR
                 
 ********************************************/
+.blog-sidebar {
+  border-left: 1px solid var(--light-teal);
+  padding: 0 3rem;
+  section {
+    padding: 0;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: var(--coral);
+  }
+}
