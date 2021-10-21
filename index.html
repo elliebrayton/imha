@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FONT -->
     <link rel="stylesheet" href="https://use.typekit.net/yhq3tmd.css" />
+    <!-- ICON LIBRARY -->
+    <script src="https://kit.fontawesome.com/8e9a5a64b5.js" crossorigin="anonymous"></script>
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="style.css" />
     <script src="jquery.min.js"></script>
@@ -19,8 +21,10 @@
       <header class="header">
             <div class="container">
         <!-- TODO: This is where logo and navigation will go  -->
-        <div class="logo">IMHA logo</div>
-        <nav>
+        <div class="logo-box"><img src="images/logo.svg" width="200" alt="IMHA logo" title="logo"></div>
+        <button id="bars" class="top-right" type="button"><i class="fas fa-bars"></i></button>
+			  <button id="cross" class="top-right hide-button" type="button"><i class="fas fa-times"></i></button>
+        <nav id="navigation">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -126,29 +130,39 @@
       <footer class="footer">
           <div class="container">
             <!-- TODO: This is where the footer content will go -->
-            <div class="logo">IMHA logo</div>
+            <div class="logo-box">
+              <img class="logo" src="images/logo-white.svg" width="200" alt="IMHA logo" title="logo">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              <div class="social-media">
+                <a href="https://www.facebook.com/teamimha" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/teamimha/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/teamimha" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCmhjz-8g1xPOOsk_1K34_Ew/featured" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/international-mental-health-association/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
             <div class="footer-nav">
               <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="sub-nav"><a href="index.html">Home</a></li>
                 <li>
                   <ul class="sub-nav">
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="#"> Meet the Team</a></li>
+                    <li><a href="meet-the-team.html"> Meet the Team</a></li>
                   </ul>
                 </li>
                 <li>
                   <ul class="sub-nav">
                     <li><a href="programs.html">Our Programs</a></li>
-                    <li><a href="#">Black Mental Health</a></li>
-                    <li><a href="#">Blue School</a></li>
-                    <li><a href="#">Chapters & Connections</a></li>
-                    <li><a href="#">Kind to Your Mind</a></li>
-                    <li><a href="#">MindMatters</a></li>
-                    <li><a href="#">We Live for Us</a></li>
+                    <li><a href="black-mental-health.html">Black Mental Health</a></li>
+                    <li><a href="blue-school.html">Blue School</a></li>
+                    <li><a href="chapters-n-connections.html">Chapters & Connections</a></li>
+                    <li><a href="kind-to-your-mind.html">Kind to Your Mind</a></li>
+                    <li><a href="mindmatters.html">MindMatters</a></li>
+                    <li><a href="we-live-for-us.html">We Live for Us</a></li>
                   </ul>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="donate.html">Donate</a></li>
+                <li class="sub-nav"><a href="contact.html">Contact</a></li>
+                <li class="sub-nav"><a href="donate.html">Donate</a></li>
               </ul>
             </nav>
             </div>

@@ -1,28 +1,91 @@
-footer {
-    // background: #678ca1;
-    // color: #F5F2F4;
+.footer {
+    // background: #f2f2f2;
+    padding: 5%;
+    background-color: #678ca1;
+    color: #F5F2F4;
+    font-size: 1.5rem;
+    a {
+        color: inherit;
+        transition: .25s;
+    }
+    a:hover {
+        color: #67cbe0;
+        transition: .25s;
+    }
+    p {
+        color: #F4F2F4;
+        padding: 0;
+        text-align: center;
+      }
     .container {
         display: flex;
-        justify-content: space-between;
-        .logo {
+        flex-direction: column;
+        align-items: center;
+        .logo-box {
+            text-align: center;
             flex-grow: 1;
+            max-width: 400px;
+            margin-bottom: 30px;
+            .logo {
+                margin-bottom: 30px;
+            }
+            .social-media {
+                display: flex;
+                justify-content: space-between;
+                max-width: 200px;
+                margin: 10px auto 0;
+                font-size: 3rem;
+            }
         }
         .footer-nav {
             flex-grow: 2;
             ul {
                 display: flex;
-                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                font-weight: 700;
+                .sub-nav {
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                    }
                 li {
                     list-style-type: none;
-                    a {
-                        color: inherit;
-                    }
+                    margin: 5px 0;
+                }
+            }
+            @media(min-width: 728px) {
+                ul {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    margin-top: 20px;
                     .sub-nav {
-                        flex-direction: column;
+                        margin: 0 20px;
                         li {
-                            padding: 10px 0;
+                            margin-bottom: 10px;
                         }
                     }
+                    li {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        @media(min-width: 1021px) {
+            flex-direction: row;
+            justify-content: space-between;
+            .logo-box {
+                text-align: left;
+                align-items: flex-start;
+                p {
+                    text-align: left;
+                }
+                .social-media {
+                    margin: 10px 0;
+                }
+            }
+            .footer-nav {
+                ul {
+                    justify-content: flex-end;
                 }
             }
         }

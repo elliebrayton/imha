@@ -19,3 +19,19 @@ $(function () {
     });
   }, 2200);
 });
+
+
+// Mobile Nav
+
+var bars = document.getElementById("bars");
+var cross = document.getElementById("cross");
+var navigation = document.getElementById("navigation");
+
+var openCloseNav = function openCloseNav() {
+    navigation.classList.toggle("expand");
+    bars.classList.toggle("hide-button");
+    cross.classList.toggle("hide-button");
+};
+
+bars.addEventListener("click", openCloseNav);
+cross.addEventListener("click", openCloseNav);
