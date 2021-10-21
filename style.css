@@ -4208,6 +4208,45 @@ a.text-dark:hover, a.text-dark:focus {
 .invisible {
   visibility: hidden !important; }
 
+.primary-btn {
+  display: block;
+  position: relative;
+  width: 18rem;
+  font-size: 1.6rem;
+  background: var(--teal);
+  padding: 1rem 0;
+  z-index: 2;
+  text-align: center;
+  border-radius: 25rem;
+  transition: all 0.2s ease-in-out; }
+  .primary-btn:link, .primary-btn:visited {
+    color: white; }
+  .primary-btn:hover {
+    background: var(--grey-blue); }
+  @media (min-width: 63.81em) {
+    .primary-btn:hover {
+      box-shadow: 0 2px 10px rgba(65, 65, 65, 0.507);
+      transform: translateY(-4px); }
+    .primary-btn:active {
+      transform: translateY(1px); } }
+
+.secondary-btn {
+  display: block;
+  font-size: 1.4rem;
+  background: var(--coral);
+  padding: 0.5rem 3rem;
+  border-radius: 25rem;
+  text-align: center; }
+  .secondary-btn:link, .secondary-btn:visited {
+    color: white; }
+  .secondary-btn:hover {
+    background: var(--grey-blue);
+    box-shadow: 1px 1px 5px rgba(65, 65, 65, 0.507); }
+    .secondary-btn:hover:link, .secondary-btn:hover:visited {
+      color: white; }
+  .secondary-btn:active {
+    transform: translateY(1px); }
+
 .projects-img {
   display: block;
   max-width: 100%;
@@ -4218,7 +4257,7 @@ a.text-dark:hover, a.text-dark:focus {
     position: relative;
     display: block;
     width: 100%;
-    min-height: 20rem;
+    height: 20rem;
     object-fit: cover;
     transition: 0.7s ease-in-out;
     border-radius: 3px;
@@ -4246,7 +4285,7 @@ a.text-dark:hover, a.text-dark:focus {
       height: 25%;
       overflow: hidden;
       padding: 1rem;
-      transition: all 0.5s ease-out;
+      transition: all 0.2s ease-out;
       opacity: 1; }
       .overlay h3 {
         color: var(--background-white); }
@@ -4487,7 +4526,7 @@ h2,
 h3,
 h4,
 p {
-  font-family: montserrat, sans-serif; }
+  font-family: museo-sans, sans-serif; }
 
 h1 {
   position: relative;
@@ -4534,7 +4573,7 @@ p {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  font-family: montserrat, sans-serif; }
+  font-family: museo-sans, sans-serif; }
 
 .site-content {
   flex: 1;
@@ -4630,24 +4669,104 @@ a:visited {
                     COMPONENTS
                 
 ********************************************/
-.primary-btn {
-  display: block;
-  position: relative;
-  width: 18rem;
-  font-size: 1.6rem;
-  background: var(--teal);
-  padding: 1rem 0;
-  z-index: 2;
-  text-align: center;
-  border-radius: 25rem;
-  transition: all 0.2s ease-in-out; }
-  .primary-btn:link, .primary-btn:visited {
-    color: white; }
-  .primary-btn:hover {
-    background: var(--grey-blue); }
+/********************************************
+
+                    BLOG PAGE
+                
+********************************************/
+.blog {
+  display: flex !important;
+  text-align: left !important;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 35rem; }
   @media (min-width: 63.81em) {
-    .primary-btn:hover {
-      box-shadow: 0 2px 10px rgba(65, 65, 65, 0.507);
-      transform: translateY(-4px); }
-    .primary-btn:active {
-      transform: translateY(1px); } }
+    .blog:hover img {
+      filter: none !important; } }
+
+.blog-link {
+  color: inherit; }
+  .blog-link:hover {
+    color: var(--background-dark); }
+
+.pagination {
+  width: 30rem;
+  margin: auto; }
+
+.pagination-link:link,
+.pagination-link:visited {
+  display: block;
+  color: var(--coral);
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 10rem;
+  text-align: center;
+  letter-spacing: 0.1px;
+  border: 1px var(--coral) solid;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem 0.2rem;
+  transition: 0.2s all; }
+  .pagination-link:link:hover,
+  .pagination-link:visited:hover {
+    background: var(--coral);
+    color: white; }
+
+/********************************************
+
+                SITE CONTENT
+                
+********************************************/
+/********************************************
+
+                SITE FORMS
+                
+********************************************/
+.newsletter-form {
+  font-family: museo-sans, sans-serif;
+  position: relative;
+  width: 100%; }
+  .newsletter-form .form-group {
+    margin: 0.75rem 0; }
+  .newsletter-form .form-input {
+    font-size: 1.6rem;
+    font-family: inherit;
+    font-weight: 300;
+    color: var(--grey-blue);
+    padding: 1rem 1.5rem;
+    border-radius: 0.3rem;
+    background: white;
+    border: none;
+    display: block;
+    width: 100%; }
+    .newsletter-form .form-input:focus {
+      outline: none;
+      box-shadow: 1px 1px 5px rgba(103, 140, 161, 0.639);
+      border-bottom: 4px solid var(--grey-blue); }
+    .newsletter-form .form-input:focus:invalid {
+      border-bottom: 4px solid var(--coral); }
+  .newsletter-form .form-label {
+    font-size: 1.2rem;
+    letter-spacing: 0.76px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 5px;
+    color: white;
+    transition: all 0.3s; }
+  .newsletter-form .form-input:placeholder-shown + .form-label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem); }
+
+.form-btn {
+  font-family: museo-sans, sans-serif;
+  color: white !important;
+  background: var(--coral) !important;
+  border: none; }
+  .form-btn:hover {
+    cursor: pointer;
+    background: var(--grey-blue) !important;
+    box-shadow: 1px 1px 5px rgba(65, 65, 65, 0.507) !important; }
+    .form-btn:hover:link, .form-btn:hover:visited {
+      color: white; }
