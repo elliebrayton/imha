@@ -35,3 +35,12 @@ var openCloseNav = function openCloseNav() {
 
 bars.addEventListener("click", openCloseNav);
 cross.addEventListener("click", openCloseNav);
+
+// Popup Form
+
+function popup() {
+  var popup = document.getElementById("popup-form");
+  var message= document.getElementById("message");
+  popup.classList.toggle("show");
+  message.style.display="none";
+}
