@@ -4778,11 +4778,29 @@ a:visited {
                 
 ********************************************/
 .blog-sidebar {
-  border-left: 1px solid var(--light-teal);
-  padding: 0 3rem; }
+  padding: 0 3rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem; }
   .blog-sidebar section {
-    padding: 0; }
+    padding: 0;
+    padding-bottom: 2rem; }
   .blog-sidebar h3 {
     font-weight: 500;
     font-size: 1.8rem;
     color: var(--coral); }
+  .blog-sidebar p {
+    font-size: 1.4rem;
+    line-height: 1.8rem; }
+  .blog-sidebar .blog-sidebar-item {
+    font-weight: 300;
+    list-style: none;
+    padding-bottom: 1.5rem; }
+    .blog-sidebar .blog-sidebar-item a:link,
+    .blog-sidebar .blog-sidebar-item a:visited {
+      color: var(--grey-blue); }
+      .blog-sidebar .blog-sidebar-item a:link:hover,
+      .blog-sidebar .blog-sidebar-item a:visited:hover {
+        color: var(--teal); }
+  @media (min-width: 63.81em) {
+    .blog-sidebar {
+      border-left: 1px solid var(--light-teal); } }
