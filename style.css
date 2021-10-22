@@ -4453,10 +4453,28 @@ header .container .expand {
   top: 150px;
   left: 50%;
   margin-left: -150px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  padding: 10px 0 25px;
+  border-radius: 4px; }
+  #popup-form .close {
+    color: #3f4b52; }
 
 .show {
-  display: block !important; }
+  display: block !important;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .footer {
   padding: 5%;

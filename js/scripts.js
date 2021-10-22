@@ -44,3 +44,8 @@ function popup() {
   popup.classList.toggle("show");
   message.style.display="none";
 }
+
+function closePopup() {
+  var popup = document.getElementById("popup-form");
+  popup.classList.toggle("show");
+}
