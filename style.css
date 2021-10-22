@@ -4597,6 +4597,9 @@ section {
 .bg-accent {
   background: var(--teal); }
 
+.bg-accent-1 {
+  background: var(--background-white); }
+
 a:link,
 a:visited {
   text-decoration: none; }
@@ -4716,6 +4719,52 @@ a:visited {
 /********************************************
 
                 SITE CONTENT
+                
+********************************************/
+.team-member {
+  width: 90%;
+  background: white;
+  padding: 2rem;
+  border: 0.5px solid rgba(187, 187, 187, 0.301);
+  border-radius: 5px; }
+  .team-member h3 {
+    font-weight: 500;
+    font-size: 1.8rem; }
+  .team-member:hover {
+    box-shadow: 1px 2px 20px rgba(187, 187, 187, 0.233); }
+
+.team-member-img {
+  display: block;
+  width: 25rem;
+  height: 25rem;
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  margin: 0 auto; }
+  .team-member-img img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.7s ease-in-out;
+    border-radius: 25rem;
+    margin: 0 0 1.5rem; }
+
+.team-social-link > * {
+  padding-right: 1rem; }
+
+.team-social-link a:link,
+.team-social-link a:visited {
+  color: var(--grey-blue);
+  font-size: 2rem; }
+  .team-social-link a:link:hover,
+  .team-social-link a:visited:hover {
+    color: var(--coral); }
+
+/********************************************
+
+                  TEAM PAGE
                 
 ********************************************/
 /********************************************
