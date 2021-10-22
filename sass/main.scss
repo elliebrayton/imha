@@ -465,7 +465,7 @@ a:visited {
                 
 ********************************************/
 .blog-sidebar {
-  padding: 0 3rem;
+  padding: 3rem 0;
   font-size: 1.4rem;
   line-height: 1.8rem;
   section {
@@ -494,7 +494,32 @@ a:visited {
     }
   }
 
+  .sidebar-btn {
+    display: block;
+    min-width: 15rem;
+    max-width: 20rem;
+    color: var(--coral);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.2px;
+    border: 1px var(--coral) solid;
+    border-radius: 3px;
+    padding: 0.5rem 1rem 0.3rem;
+    transition: 0.2s all;
+    &:hover {
+      background: var(--coral);
+      color: white;
+      box-shadow: 1px 1px 5px rgba(143, 89, 76, 0.71);
+    }
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+
   @include responsive(desktop) {
+    padding: 0 3rem;
     border-left: 1px solid var(--light-teal);
+    border-top: 0px solid var(--light-teal);
   }
 }
