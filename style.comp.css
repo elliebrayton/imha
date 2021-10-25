@@ -4428,7 +4428,7 @@ header .container {
     font-size: 1.6rem;
     font-weight: 700;
     max-height: 0;
-    transition: max-height 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: max-height 1s ease-in-out;
     overflow: hidden; }
     header .container nav ul {
       display: flex;
@@ -4465,6 +4465,14 @@ main {
   @media (min-width: 900px) {
     main {
       margin-top: 0; } }
+
+header .container button {
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  background-color: inherit;
+  font-size: 2.5rem;
+  color: #3f4b52; }
 
 header .container .top-right {
   position: absolute;
@@ -5103,46 +5111,10 @@ a:visited {
       border-left: 1px solid var(--light-teal);
       border-top: 0px solid var(--light-teal); } }
 
-/********************************************
-
-                  HAMBURGER
-                
-********************************************/
 .hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  width: 28px;
-  height: 30px;
+  display: block;
+  width: 40px;
+  height: 40px;
   border: none;
   cursor: pointer;
-  background-color: transparent; }
-  .hamburger .line {
-    display: block;
-    width: 100%;
-    height: 3px;
-    border-radius: 4px;
-    background: var(--grey-blue);
-    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1), opacity 0.3s ease-out; }
-    .hamburger .line:not(:first-child) {
-      margin-top: 5.5px; }
-
-.hamburger:hover .line {
-  background: var(--coral); }
-
-.hamburger.active .line {
-  background: var(--coral);
-  height: 4px; }
-
-.hamburger.active .top {
-  transform: translateY(8px) rotate(-135deg); }
-
-.hamburger.active .middle {
-  opacity: 0;
-  transform: translateX(-50%); }
-
-.hamburger.active .bottom {
-  transform: translateY(-11px) rotate(-225deg); }
+  background-color: red; }

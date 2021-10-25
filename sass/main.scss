@@ -101,7 +101,6 @@ $spacers: map-merge(
 }
 
 @import '../bootstrap/bootstrap-4-grid/scss/grid.scss';
-@import '../slick/slick';
 @import 'base/typography';
 @import 'components/buttons';
 @import 'components/projects';
@@ -584,4 +583,56 @@ a:visited {
     border-left: 1px solid var(--light-teal);
     border-top: 0px solid var(--light-teal);
   }
+}
+
+/********************************************
+
+                  HAMBURGER
+                
+********************************************/
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 28px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  .line {
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background: var(--grey-blue);
+    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1),
+      opacity 0.3s ease-out;
+    &:not(:first-child) {
+      margin-top: 5.5px;
+    }
+  }
+}
+
+.hamburger:hover .line {
+  background: var(--coral);
+}
+
+.hamburger.active .line {
+  background: var(--coral);
+  height: 4px;
+}
+.hamburger.active .top {
+  transform: translateY(8px) rotate(-135deg);
+}
+
+.hamburger.active .middle {
+  opacity: 0;
+  transform: translateX(-50%);
+}
+
+.hamburger.active .bottom {
+  transform: translateY(-11px) rotate(-225deg);
 }
