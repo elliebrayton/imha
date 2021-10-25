@@ -4614,6 +4614,89 @@ header .container .expand {
         .footer .container .footer-nav ul {
           justify-content: flex-end; } }
 
+.about-us {
+  background-image: url("images/rainbow-sequins.jpg"); }
+
+.heading1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 15vw;
+  max-height: 200px;
+  min-height: 100px; }
+  .heading1 .heading-gradient {
+    position: relative;
+    height: inherit;
+    width: inherit;
+    max-height: inherit;
+    min-height: inherit;
+    background-image: linear-gradient(#00000000, #565e63e1); }
+    .heading1 .heading-gradient h1 {
+      color: white;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding-bottom: 20px;
+      text-align: center; }
+
+.our-values {
+  max-width: 600px;
+  margin: auto;
+  text-align: center; }
+  .our-values .value {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    .our-values .value .flip-card-inner .flip-card-back p {
+      width: 230px; }
+    .our-values .value .flip-card-inner .flip-card-front .light-text {
+      color: #ffffff; }
+    .our-values .value .flip-card-inner .flip-card-front .dark-text {
+      color: #3f4b52; }
+    .our-values .value .flip-card-inner .flip-card-back, .our-values .value .flip-card-inner .flip-card-front {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .our-values .value .flip-card-inner .flip-card-back .light-text, .our-values .value .flip-card-inner .flip-card-front .light-text {
+        color: #ffffff; }
+      .our-values .value .flip-card-inner .flip-card-back .dark-text, .our-values .value .flip-card-inner .flip-card-front .dark-text {
+        color: #3f4b52; }
+  .our-values .circle1 {
+    background-image: url("images/aqua-circle.png"); }
+  .our-values .circle2 {
+    background-image: url("images/coral-circle.png"); }
+  .our-values .circle3 {
+    background-image: url("images/lime-circle.png"); }
+  .our-values .circle4 {
+    background-image: url("images/blue-circle.png"); }
+
+@media (min-width: 1200px) {
+  .value {
+    background-color: transparent; }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d; }
+  .value:hover .flip-card-inner {
+    transform: rotateY(180deg); }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flip-card-back {
+    transform: rotateY(180deg); } }
+
 *,
 *::before,
 *::after {
