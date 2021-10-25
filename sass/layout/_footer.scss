@@ -53,7 +53,7 @@
                     margin: 5px 0;
                 }
             }
-            @media(min-width: 728px) {
+            @media(min-width: 850px) {
                 ul {
                     flex-direction: row;
                     align-items: flex-start;
@@ -70,7 +70,7 @@
                 }
             }
         }
-        @media(min-width: 1021px) {
+        @media(min-width: 1335px) {
             flex-direction: row;
             justify-content: space-between;
             .logo-box {
