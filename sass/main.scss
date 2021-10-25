@@ -101,6 +101,7 @@ $spacers: map-merge(
 }
 
 @import '../bootstrap/bootstrap-4-grid/scss/grid.scss';
+@import '../slick/slick';
 @import 'base/typography';
 @import 'components/buttons';
 @import 'components/projects';
