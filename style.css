@@ -4435,7 +4435,7 @@ header .container {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      padding: 2rem; }
+      padding: 2.5rem 0 0; }
       header .container nav ul li {
         list-style-type: none;
         margin-bottom: 10px; }
@@ -4473,7 +4473,9 @@ header .container .top-right {
   right: 0; }
 
 header .container .expand {
-  max-height: 1000px; }
+  max-height: 1000px;
+  position: relative;
+  z-index: 999; }
 
 .message {
   padding: 10px 0;
@@ -4482,7 +4484,7 @@ header .container .expand {
   position: absolute;
   top: 130px;
   width: 100%;
-  z-index: 999;
+  z-index: 99;
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 500; }
