@@ -4639,6 +4639,35 @@ header .container .expand {
       padding-bottom: 20px;
       text-align: center; }
 
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 20px; }
+  .embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.image-block img {
+  width: 100%; }
+
+.emphasis {
+  font-weight: 500; }
+
+.watercolor-bg {
+  background-image: url("images/aqua-span.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 95px 5px; }
+  .watercolor-bg p {
+    color: #ffffff; }
+
 .our-values {
   max-width: 600px;
   margin: auto;
