@@ -4436,6 +4436,9 @@ header .container {
       justify-content: space-between;
       align-items: center;
       padding: 2.5rem 0 0; }
+      @media (min-width: 56.25em) {
+        header .container nav ul {
+          padding: 0 0 0 0; } }
       header .container nav ul li {
         list-style-type: none;
         margin-bottom: 10px; }
@@ -4479,10 +4482,9 @@ header .container .expand {
 
 .message {
   padding: 10px 0;
-  background-color: #ee9985;
+  background-color: var(--teal);
   text-align: center;
-  position: absolute;
-  top: 130px;
+  position: relative;
   width: 100%;
   z-index: 99;
   color: #ffffff;
