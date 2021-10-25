@@ -4508,16 +4508,19 @@ header .container .expand {
   position: fixed;
   z-index: 9999;
   margin: auto;
-  width: 100%;
-  max-width: 300px;
+  width: 90%;
+  max-width: 550px;
   top: 150px;
   left: 50%;
-  margin-left: -150px;
-  background-color: #ffffff;
-  padding: 10px 0 25px;
-  border-radius: 4px; }
+  background-color: var(--grey-blue);
+  padding: 2rem;
+  border-radius: 4px;
+  transform: translateX(-50%); }
   #popup-form .close {
-    color: #3f4b52; }
+    color: white; }
+  @media (min-width: 45.5em) {
+    #popup-form {
+      padding: 2.4rem; } }
 
 .show {
   display: block !important;
@@ -5003,13 +5006,16 @@ a:visited {
                 SITE FORMS
                 
 ********************************************/
-.newsletter-form {
+.newsletter-form,
+.popup-form {
   font-family: museo-sans, sans-serif;
   position: relative;
   width: 100%; }
-  .newsletter-form .form-group {
+  .newsletter-form .form-group,
+  .popup-form .form-group {
     margin: 0.75rem 0; }
-  .newsletter-form .form-input {
+  .newsletter-form .form-input,
+  .popup-form .form-input {
     font-size: 1.6rem;
     font-family: inherit;
     font-weight: 300;
@@ -5020,13 +5026,16 @@ a:visited {
     border: none;
     display: block;
     width: 100%; }
-    .newsletter-form .form-input:focus {
+    .newsletter-form .form-input:focus,
+    .popup-form .form-input:focus {
       outline: none;
       box-shadow: 1px 1px 5px rgba(103, 140, 161, 0.639);
       border-bottom: 4px solid var(--grey-blue); }
-    .newsletter-form .form-input:focus:invalid {
+    .newsletter-form .form-input:focus:invalid,
+    .popup-form .form-input:focus:invalid {
       border-bottom: 4px solid var(--coral); }
-  .newsletter-form .form-label {
+  .newsletter-form .form-label,
+  .popup-form .form-label {
     font-size: 1.2rem;
     letter-spacing: 0.76px;
     font-weight: 700;
@@ -5035,7 +5044,8 @@ a:visited {
     margin-top: 5px;
     color: white;
     transition: all 0.3s; }
-  .newsletter-form .form-input:placeholder-shown + .form-label {
+  .newsletter-form .form-input:placeholder-shown + .form-label,
+  .popup-form .form-input:placeholder-shown + .form-label {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem); }

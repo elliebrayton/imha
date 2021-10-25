@@ -129,16 +129,20 @@ header .container {
   position: fixed;
   z-index: 9999;
   margin: auto;
-  width: 100%;
-  max-width: 300px;
+  width: 90%;
+  max-width: 550px;
   top: 150px;
   left: 50%;
-  margin-left: -150px;
-  background-color: #ffffff;
-  padding: 10px 0 25px;
+  background-color: var(--grey-blue);
+  padding: 2rem;
   border-radius: 4px;
+  transform: translateX(-50%);
   .close {
-    color: #3f4b52;
+    color: white;
+  }
+
+  @include responsive(tab-port) {
+    padding: 2.4rem;
   }
 }
 
