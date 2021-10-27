@@ -14,6 +14,10 @@
     transition: 0.7s ease-in-out;
     border-radius: 3px;
     margin: 0 0 1.5rem;
+
+    @include responsive(desktop) {
+      height: 23rem;
+    }
   }
   @include responsive(tab-port) {
     h3 {
