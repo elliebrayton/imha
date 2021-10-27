@@ -21,9 +21,29 @@
   <body class=site>
       <!-- START HEADER -->
       <header class="header">
-            <div class="container">
+        <div class="container">
+
         <!-- TODO: This is where logo and navigation will go  -->
-        <p>This is the header content</p>
+        <div class="logo-box"><img src="images/logo.svg" width="200" alt="IMHA logo" title="logo" class="logo"></div>
+          <button class="hamburger" id="hamburger">
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+          </button>
+          <!-- NOTE: Created hamburger button instead of icon -->
+        <!-- <button id="bars" class="top-right" type="button"><i class="fas fa-bars"></i></button>
+			  <button id="cross" class="top-right hide-button" type="button"><i class="fas fa-times"></i></button> -->
+        <nav id="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Our Programs</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="donate.html" class="secondary-btn my-3 mx-md-4">Donate</a></li>
+          </ul>
+        </nav>
+        <!-- from seperate branch test -->
             </div>
       </header>
       <!-- END HEADER -->

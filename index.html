@@ -38,56 +38,65 @@
 			  <button id="cross" class="top-right hide-button" type="button"><i class="fas fa-times"></i></button> -->
         <nav id="navigation">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="programs.html">Our Programs</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="donate.html" class="secondary-btn my-3 mx-md-4">Donate</a></li>
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About Us</a></li>
+            <li><a class="nav-link" href="programs.html">Our Programs</a></li>
+            <li><a class="nav-link" href="blog.html">Blog</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="nav-cta secondary-btn my-3 mx-md-4" href="donate.html">Donate</a></li>
           </ul>
         </nav>
         <!-- from seperate branch test -->
             </div>
       </header>
-      <div id="popup-form">
-        <i class="fas fa-times-circle close" onclick="closePopup()"></i>
-        <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit illo soluta dolorum sapiente sequi? Qui, expedita quidem. Doloribus modi accusamus voluptatibus laborum nam facere, similique aut necessitatibus nesciunt architecto dolore?</p>
-        <form action="#" class="form">
-          <div class="newsletter-form">
-            <div class="form-group">
-                <input type="text" class="form-input" placeholder="First Name" id=firstName>
-                <label for="firstName" class="form-label">First Name</label>                        
-            </div>
-              <div class="form-group">
-                <input type="text" class="form-input" placeholder="Last Name" id=lastName>
-                <label for="lasttName" class="form-label">Last Name</label>                        
-            </div>
-              <div class="form-group">
-                <input type="email" class="form-input" placeholder="Your e-mail" id=email>
-                <label for="email" class="form-label">E-mail</label>
-            </div>
-          </div>
-          <button class="form-btn primary-btn mx-auto">Get Involved</button>
-      </form>
-      </div>
       <!-- END HEADER -->
       <!-- START MAIN -->
       <main class=site-content>
+        <!-- START POPUP ALERT -->
         <div id="message" class="message">
           Stay connected! <a class="popup-btn" onclick="popup()">Sign up for our newsletter!</a>
           <i class="fas fa-times-circle close" onclick="this.parentElement.style.display='none';"></i>
         </div>
+        <!-- END POPUP ALERT -->
+        <!-- START POPUP FORM -->
+        <div id="popup-form">
+          <i class="fas fa-times-circle close" onclick="closePopup()"></i>
+          <div class="row">
+            <div class="col-5 mx-0 px-0 d-none d-sm-block">
+              <img class="popup-img" src="images/placeholder-img-2.png" alt="" srcset="">
+            </div>
+            <div class="col-12 col-sm-7 pl-5 py-4">
+              <form action="#" class="form">
+                <h2 class="popup-heading">Stay Connected! Sign up for our Newsletter</h2>
+                <div class="popup-form">
+                      <div class="popup-group"> 
+                        <input type="text" class="form-input" placeholder="First Name" id=firstName>                     
+                      </div>
+                      <div class="popup-group"> 
+                        <input type="text" class="form-input" placeholder="Last Name" id=lastName>                     
+                    </div>
+                      <div class="popup-group flex-grow-1">
+                        <input type="email" class="form-input" placeholder="Your e-mail" id=email> 
+                    </div>
+                    <button class="popup-form-btn mx-auto">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- END POPUP FORM -->
           <section class=jumbotron>
               <div class="d-flex justify-content-center align-items-center jumbotron-content container">
                   <div class="display-message">
                     <h1 id="display-text">Welcome</span></h1>
                     <p class="jumbotron-text">Nice to meet you, we're the International Mental Health Association. <br></p>
-                    <p class="jumbotron-text"><b>Let's innovate together</b></p>
+                    <p class="jumbotron-text"><b>IMHA - Let's innovate together</b></p>
                   </div>
               </div>
               <div class="btn-wrapper d-flex flex-column align-items-center flex-md-row justify-content-center">
-                <a href="#" class="primary-btn my-3 mx-md-4">Button</a>
-                <a href="#" class="primary-btn my-3 mx-md-4">Button</a>
+                <a href="#" class="primary-btn my-3 mx-md-4">Donate</a>
+                <a href="#" class="primary-btn my-3 mx-md-4">Learn More</a>
             </div>
           </section>
           <section>
@@ -149,6 +158,7 @@
                     </div>
                 <!-- END IMAGE CONTAINER -->
               </div>
+              <a href="#" class="primary-btn mt-8 mx-auto">View Programs</a>
           </section>
           <section class="bg-accent">
               <div class="container">
