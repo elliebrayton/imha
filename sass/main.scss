@@ -105,6 +105,8 @@ $spacers: map-merge(
 @import 'components/buttons';
 @import 'components/projects';
 @import 'components/slideshow';
+@import 'components/slick';
+@import 'components/slick-theme';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/content';
@@ -247,6 +249,9 @@ section {
 
 .bg-accent-1 {
   background: var(--background-white);
+}
+.bg-accent-3 {
+  background: var(--light-grey);
 }
 
 a:link,
@@ -771,3 +776,69 @@ a:visited {
   font-weight: 500;
   color: var(--coral);
 }
+.slick-prev::before,
+.slick-next::before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  color: #c5d0d8;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.testimonial-slider {
+  max-width: 700px;
+  margin: 0 auto;
+
+  @include responsive(lg-desktop) {
+    max-width: inherit;
+  }
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .testimonial-content {
+    background: white;
+    width: 85% !important;
+    margin: 0 auto;
+    display: flex !important;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: var(--grey-blue) solid 1px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 20px rgba(187, 187, 187, 0.51);
+  }
+
+  p {
+    color: var(--grey-blue);
+    font-size: 1.2rem;
+    line-height: 140%;
+    font-weight: 100;
+    padding: 0;
+  }
+
+  .testimony {
+    padding: 1.5rem;
+  }
+
+  .source {
+    background: var(--grey-blue);
+    padding: 1rem;
+    p {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 300;
+      padding: 0;
+    }
+  }
+}
+
+// .textured-blue {
+//   background-image: url(images/textured-blue.png);
+// }
