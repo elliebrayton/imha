@@ -19,7 +19,6 @@ function custom_theme_scripts(){
 
 
         wp_enqueue_script('slider-js', get_stylesheet_directory_uri() . '/js/slider.js', array('jquery'), NULL, true ); 
-        wp_enqueue_script('slideshow-js', get_stylesheet_directory_uri() . '/js/slideshow.js', array('jquery'), NULL, true ); 
 
     
 
