@@ -4357,73 +4357,203 @@ a.text-dark:hover, a.text-dark:focus {
   letter-spacing: 1.2px;
   z-index: 2; }
 
-.slideshow-container {
-  position: relative;
+.programs-slideshow {
+  width: 80%;
+  max-width: 400px;
   margin: auto;
-  background-color: #68cbde; }
-  .slideshow-container p {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    opacity: 0; }
-  .slideshow-container .slide-width {
-    position: relative;
-    margin: auto; }
-    .slideshow-container .slide-width .gradient {
-      position: absolute;
-      bottom: 0px;
-      background-color: rgba(60, 96, 118, 0.84);
-      padding: 20px 0;
-      width: 100%; }
-      .slideshow-container .slide-width .gradient h1 {
-        text-align: center;
-        color: white;
-        width: 100%; }
+  text-align: center; }
+  .programs-slideshow .slick-arrow {
+    color: #68cbde; }
+  .programs-slideshow .slick-next::before, .programs-slideshow .slick-prev::before {
+    color: #68cbde; }
+  .programs-slideshow .slide {
+    max-width: 300px;
+    max-height: 150px;
+    overflow: hidden;
+    object-position: center; }
 
-.program-slide {
+body.lb-disable-scrolling {
+  overflow: hidden; }
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #565e63;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
   display: none;
-  text-align: center;
-  margin: auto;
+  max-width: 100%;
+  object-fit: scale-down; }
+
+.lightbox {
+  position: absolute;
+  left: 0;
   width: 100%;
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+  outline: none; }
 
-#photo1 {
-  background-image: url("images/blueschool1.jpg"); }
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: 3px;
+  /* Image border */
+  border: 4px solid #68cbde; }
 
-#photo2 {
-  background-image: url("images/blueschool2.webp"); }
+.lightbox a img {
+  border: none; }
 
-#photo3 {
-  background-image: url("images/blueschool3.webp"); }
+.lb-outerContainer {
+  position: relative;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px;
+  /* Background color behind image.
+       This is visible during transitions. */
+  background-color: #68cbde; }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 8s;
-  animation-name: fade;
-  animation-duration: 8s; }
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both; }
 
-@-webkit-keyframes fade {
-  0% {
-    opacity: .0; }
-  33% {
-    opacity: 1; }
-  66% {
-    opacity: 1; }
-  100% {
-    opacity: .0; } }
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0; }
 
-@keyframes fade {
-  0% {
-    opacity: .0; }
-  33% {
-    opacity: 1; }
-  66% {
-    opacity: 1; }
-  100% {
-    opacity: .0; } }
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url("images/ajax-loader.gif") no-repeat; }
+
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
+
+.lb-container > .nav {
+  left: 0; }
+
+.lb-nav a {
+  outline: none;
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="); }
+
+.lb-prev, .lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block; }
+
+.lb-nav a.lb-prev {
+  width: 34%;
+  max-width: 200px;
+  left: 0;
+  float: left;
+  background: url("images/chevron-circle-left-solid.svg") left 48% no-repeat;
+  background-size: 15%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0.2;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s; }
+
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1; }
+
+.lb-nav a.lb-next {
+  width: 34%;
+  max-width: 200px;
+  right: 0;
+  float: right;
+  background: url("images/chevron-circle-right-solid.svg") right 48% no-repeat;
+  background-size: 15%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0.2;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s; }
+
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1; }
+
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px; }
+
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.lb-data {
+  padding: 0 4px;
+  color: #ccc; }
+
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em; }
+
+.lb-data .lb-caption {
+  color: #68cbde;
+  font-size: 1.8rem;
+  font-style: italic; }
+
+.lb-data .lb-caption a {
+  color: #4ae; }
+
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #68cbde; }
+
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url("images/times-circle-solid.svg") top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s; }
+
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1; }
 
 /* Slider */
 .slick-slider {
@@ -4797,6 +4927,9 @@ header .container .expand {
 
 .about-us {
   background-image: url("images/rainbow-sequins.jpg"); }
+
+.our-programs {
+  background-image: url("images/colored-knots.jpg"); }
 
 .heading1 {
   background-position: center;
