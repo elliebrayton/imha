@@ -2,9 +2,18 @@
 
 .programs-slideshow {
     width: 80%;
-    max-width: 1425px;
+    max-width: 350px;
     margin: auto;
     text-align: center;
+    @media(min-width: 775px) {
+      max-width: 650px;
+    }
+    @media(min-width: 1125px) {
+      max-width: 950px;
+    }
+    @media(min-width: 1550px) {
+      max-width: 1425px;
+    }
     .slick-arrow {
         color: #68cbde;
     }
@@ -195,6 +204,7 @@ body.lb-disable-scrolling {
   .lb-data .lb-caption {
     color: #68cbde;
     font-size: 1.8rem;
+    line-height: 120%;
     font-style: italic;
   }
   

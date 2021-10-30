@@ -4359,9 +4359,18 @@ a.text-dark:hover, a.text-dark:focus {
 
 .programs-slideshow {
   width: 80%;
-  max-width: 1425px;
+  max-width: 350px;
   margin: auto;
   text-align: center; }
+  @media (min-width: 775px) {
+    .programs-slideshow {
+      max-width: 650px; } }
+  @media (min-width: 1125px) {
+    .programs-slideshow {
+      max-width: 950px; } }
+  @media (min-width: 1550px) {
+    .programs-slideshow {
+      max-width: 1425px; } }
   .programs-slideshow .slick-arrow {
     color: #68cbde; }
   .programs-slideshow .slick-next::before, .programs-slideshow .slick-prev::before {
@@ -4523,6 +4532,7 @@ body.lb-disable-scrolling {
 .lb-data .lb-caption {
   color: #68cbde;
   font-size: 1.8rem;
+  line-height: 120%;
   font-style: italic; }
 
 .lb-data .lb-caption a {

@@ -70,7 +70,7 @@ $('.programs-slideshow').slick({
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
-        infinite: true,
+        infinite: false,
         dots: true
       }
     },
@@ -85,7 +85,8 @@ $('.programs-slideshow').slick({
       breakpoint: 775,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: false
       }
     }
   ]
