@@ -113,6 +113,8 @@ $spacers: map-merge(
 }
 
 @import '../bootstrap/bootstrap-4-grid/scss/grid.scss';
+@import 'plugins/slick';
+@import 'plugins/slick-theme';
 @import 'base/typography';
 @import 'base/utilities';
 @import 'components/buttons';
@@ -120,8 +122,6 @@ $spacers: map-merge(
 @import 'components/slideshow';
 @import 'components/jumbotron';
 @import 'components/hamburger';
-@import 'components/slick';
-@import 'components/slick-theme';
 @import 'components/testimonials';
 @import 'components/forms';
 @import 'layout/header';

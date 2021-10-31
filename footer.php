@@ -2,7 +2,6 @@
       <!-- START FOOTER -->
       <footer class="footer">
           <div class="container">
-            <!-- TODO: This is where the footer content will go -->
             <div class="logo-box">
               <img class="logo" src="<?php bloginfo('template_url'); ?>/images/logo-white.svg" width="200" alt="IMHA logo" title="logo">
               <p>Help us build a healthier world, and let’s innovate together.</p>

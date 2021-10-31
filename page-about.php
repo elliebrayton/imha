@@ -25,14 +25,14 @@
                         <div class="col-lg-4 image-block">
                             <div class="row py-3">
                                 <div class="col-6">
-                                    <img src="<?php bloginfo('template_url'); ?>/images/be-kind.jpg" width="300"/>
+                                    <img src="<?php bloginfo('template_url'); ?>/images/be-kind.jpg" width="300" alt="be-kind"/>
                                 </div>
                                 <div class="col-6">
-                                    <img src="<?php bloginfo('template_url'); ?>/images/self-care.jpg"  width="300"/>
+                                    <img src="<?php bloginfo('template_url'); ?>/images/self-care.jpg"  alt="self-care" width="300"/>
                                 </div>
                             </div>
                             <div class="py-3">
-                                <img src="<?php bloginfo('template_url'); ?>/images/world-map.jpg" width="650"/>
+                                <img src="<?php bloginfo('template_url'); ?>/images/world-map.jpg" alt="world-map" width="650"/>
                             </div>
                         </div>
                     </div>

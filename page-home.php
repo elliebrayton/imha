@@ -13,7 +13,7 @@
           <i class="fas fa-times-circle close" onclick="closePopup()"></i>
           <div class="row">
             <div class="col-5 mx-0 px-0 d-none d-sm-block">
-              <img class="popup-img" src="<?php bloginfo('template_url'); ?>/images/placeholder-img-2.png" alt="" srcset="">
+              <img class="popup-img" src="<?php bloginfo('template_url'); ?>/images/placeholder-img-2.png" alt="baskets" srcset="">
             </div>
             <div class="col-12 col-sm-7 pl-5 py-4">
               <form action="#" class="form">
@@ -51,8 +51,6 @@
           </section>
           <section class="bg-white">
               <div class="container">
-              <!-- NOTE: When we actually use wordpress we will use the loop, but for now I'm just putting 3 examples to show how it will look.  -->
-              <!-- TODO: Need to make Learn More Link -->
               <h2 class="text-center">People Are Our Passion</h2>
               <p class="pt-2 px-md-7 pb-7 text-center"> We are inspired by the strength of every community we visit. Our goal is to create sustainable mental health programs for these communities that will be functioning long after we’re gone.</p>
               <div class="row justify-content-center spotlight-projects ">              

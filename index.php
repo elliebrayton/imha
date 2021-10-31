@@ -35,10 +35,10 @@
                             } //END IF
                             ?> 
                             <!-- END WORDPRESS LOOP -->  
-                            <!-- <div class="pagination d-flex justify-content-between ">
+                            <div class="pagination d-flex justify-content-between ">
                                 <a href="#" class="pagination-link my-3 mx-auto">Previous</a>
                                 <a href="#" class="pagination-link my-3 mx-auto">Next</a>
-                            </div>       -->
+                            </div>      
                           </div>
                   </div>
                   <!-- END BLOG SECTION -->
