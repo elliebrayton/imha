@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FAVICON -->
     <!-- BUG: Favicon not showing up on Firefox -->
-    <link rel="shortcut icon" type="image/png" href="images/imha-logo-favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="<?php bloginfo('template_url'); ?>/images/imha-logo-favicon.png"/>
     <!-- FONT -->
     <link rel="stylesheet" href="https://use.typekit.net/yhq3tmd.css" />
     <!-- ICON LIBRARY -->

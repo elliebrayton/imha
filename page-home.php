@@ -40,8 +40,8 @@
               <div class="d-flex justify-content-center align-items-center jumbotron-content container">
                   <div class="display-message">
                     <h1 id="display-text">Welcome</span></h1>
-                    <p class="jumbotron-text">Nice to meet you, we're the International Mental Health Association. <br></p>
-                    <p class="jumbotron-text"><b>IMHA - Let's innovate together</b></p>
+                    <p class="jumbotron-text">Hi we are IMHA. Help us build a healthier world, and let’s innovate together.<br></p>
+                    <p class="jumbotron-text"><b>Let's innovate together</b></p>
                   </div>
               </div>
               <div class="btn-wrapper d-flex flex-column align-items-center flex-md-row justify-content-center pb-5">

@@ -210,3 +210,29 @@ a:visited {
     color: white;
   }
 }
+
+// Good Translate plug-in
+
+.translator {
+  background-color: #fff;
+}
+
+.translator .switcher .option {
+  background-color: #f5f2f4;
+}
+.translator .switcher {
+  font-family: 'Museo-Sans', sans-serif;
+}
+
+.translator .switcher .option {
+  position: absolute;
+}
+
+.translator .switcher .option a,
+.translator .switcher .selected a {
+  color: #3f4b52;
+}
+
+.translator .switcher .option a:hover {
+  background: #68cbde;
+}

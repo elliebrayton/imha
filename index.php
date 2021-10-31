@@ -73,7 +73,8 @@
                 <h2 class="text-white">Newsletter</h2>
                   <div class="row d-flex">
                       <div class="col-md-6">
-                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptate consequuntur repellat mollitia quis doloribus quae, rerum praesentium nostrum temporibus sunt, ullam sequi, distinctio debitis quidem corporis molestias dicta iure.</p>
+                        <p class="text-white">Interested in getting updates from us? Sign up to receive our monthly email newsletter! </p>
+                        <p class="text-white">We’ll share program updates, donor thank yous, special messages from the team, and details about any new initiatives in the works. It’s free, and we promise we won’t bother you with any extra, unimportant emails.</p>
                       </div>
                       <div class="col-md-6">
                         <form action="#" class="form">
