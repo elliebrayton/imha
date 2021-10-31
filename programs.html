@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/8e9a5a64b5.js" crossorigin="anonymous"></script>
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="style.css" />
-    <script src="jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <title>IMHA</title>
@@ -53,16 +53,11 @@
       <!-- START MAIN -->
       <main class=site-content>
             <!-- Programs Slideshow -->
-            <div class="slideshow-container">
-                <p class="slideshow-description">A slideshow of images from IMHA's projects.</p>
-                <div id="photo1" class="program-slide fade">
-                </div>
-                <div id="photo2" class="program-slide fade">
-                </div>
-                <div id="photo3" class="program-slide fade">
-                </div>
-                <div class="slide-width"><div class="gradient"><h1>Our Programs</h1></div></div>
-            </div>
+            <div class="heading1 our-programs">
+              <div class="heading-gradient">
+                  <h1>Our Programs</h1>
+              </div>
+          </div>
           <section>
               <div class="container">
               <h2 class="text-center">Heading 2</h2>
@@ -173,6 +168,37 @@
                 <a href="#" class="primary-btn my-3 mx-md-4">Button</a>
               </div>
           </section>
+
+<!-- -----------------------------Slideshow Gallery-------------------------- -->
+
+          <section>
+            <div class="programs-slideshow">
+              <div class="slide">
+                <a href="images/blueschool1.jpg" data-lightbox="Programs" data-title="An instructor teaching a class at the Blue School"><img src="images/blueschool1.jpg" width="300" title="The Blue School 1" /></a>
+              </div>
+              <div class="slide">
+                <a href="images/blueschool2.webp" data-lightbox="Programs" data-title="Students at the Blue School"><img src="images/blueschool2.webp" width="300" title="The Blue School 2" /></a>
+              </div>
+              <div class="slide">
+                <a href="images/blueschool3.webp" data-lightbox="Programs" data-title="A student working on a project at the Blue School"><img src="images/blueschool3.webp" width="300" title="The Blue School 3" /></a>
+              </div>
+              <div class="slide">
+                <a href="images/blueschool4.jpg" data-lightbox="Programs" data-title="Computer table at the Blue School"><img src="images/blueschool4.jpg" width="300" title="Blue School 4" /></a>
+              </div>
+              <div class="slide">
+                <a href="images/blueschool5.jpg" data-lightbox="Programs" data-title="Students working on computers at the Blue School"><img src="images/blueschool5.jpg" width="300" title="The Blue School 5" /></a>
+              </div>
+              <div class="slide">
+                <a href="images/blueschool6.jpg" data-lightbox="Programs" data-title="Writing on a white board at the Blue School"><img src="images/blueschool6.jpg" width="300" title="The Blue School 6" /></a>
+              </div>
+              <div class="slide">
+                <a href="images/blueschool7.jpg" data-lightbox="Programs" data-title="An instructor helping students at the Blue School"><img src="images/blueschool7.jpg" width="300" title="The Blue School 7" /></a>
+              </div>
+              <div class="slide">
+                <a href="images/weliveforus1.jpg" data-lightbox="Programs" data-title="Team leaders standing in front Red Cross and mental health displays for We Live for Us"><img src="images/weliveforus1.jpg" width="300" title="We Live for Us 1" /></a>
+              </div>
+            </div>
+          </section>
       </main>
       <!-- END MAIN -->
       <!-- START FOOTER -->
@@ -183,8 +209,9 @@
           </div>
       </footer>
       <!-- END FOOTER -->
+      <script src="js/lightbox-plus-jquery.min.js"></script>
+      <script type="text/javascript" src="js/slick.js"></script>
       <script src="js/scripts.js"></script>
-      <script src="js/slideshow.js"></script>
   </body>
   <!-- END BODY -->
 </html>

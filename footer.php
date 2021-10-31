@@ -4,8 +4,8 @@
           <div class="container">
             <!-- TODO: This is where the footer content will go -->
             <div class="logo-box">
-              <img class="logo" src="images/logo-white.svg" width="200" alt="IMHA logo" title="logo">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              <img class="logo" src="<?php bloginfo('template_url'); ?>/images/logo-white.svg" width="200" alt="IMHA logo" title="logo">
+              <p>Help us build a healthier world, and let’s innovate together.</p>
               <div class="social-media">
                 <a href="https://www.facebook.com/teamimha" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/teamimha/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -15,29 +15,16 @@
               </div>
             </div>
             <div class="footer-nav">
-              <ul>
-                <li class="sub-nav"><a href="index.html">Home</a></li>
-                <li>
-                  <ul class="sub-nav">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="meet-the-team.html"> Meet the Team</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <ul class="sub-nav">
-                    <li><a href="programs.html">Our Programs</a></li>
-                    <li><a href="black-mental-health.html">Black Mental Health</a></li>
-                    <li><a href="blue-school.html">Blue School</a></li>
-                    <li><a href="chapters-n-connections.html">Chapters & Connections</a></li>
-                    <li><a href="kind-to-your-mind.html">Kind to Your Mind</a></li>
-                    <li><a href="mindmatters.html">MindMatters</a></li>
-                    <li><a href="we-live-for-us.html">We Live for Us</a></li>
-                  </ul>
-                </li>
-                <li class="sub-nav"><a href="blog.html">Blog</a></li>
-                <li class="sub-nav"><a href="contact.html">Contact</a></li>
-                <li class="sub-nav"><a href="donate.html">Donate</a></li>
-              </ul>
+              <?php $defaults=array(
+                          'theme_location'    => 'footer-nav',
+                          'container'         => '',
+                          'container_id'      => '',
+                          'container_class'   => 'footer-nav',
+                          'menu_id'           => false,
+                          'menu_class' => '',
+                          'depth'             => 0
+                      );
+                      wp_nav_menu($defaults);?>
             </nav>
             </div>
           </div>

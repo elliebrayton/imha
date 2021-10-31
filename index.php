@@ -46,23 +46,23 @@
                   <div class="blog-sidebar col-xl-4 col-xxl-3">
                     <section>
                         <h3>Write a Blog Post</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere recusandae, ut libero iste optio quidem. Facilis, numquam? Animi non illum sunt voluptate at consequuntur nobis beatae, facilis eligendi praesentium omnis?</p>
+                        <p>If you have a story to share, or know someone who does, reach out! We'd love to assist in getting your story out there. Use the form below to start the process.</p>
                         <a href="#" class="sidebar-btn  my-3 mx-auto">I know a writer!</a>
                       </section>
                       <section>
                         <h3>Recent Posts</h3>
                         <ul>
-                            <li class="blog-sidebar-item"><a href="#">dipisicing elit. Deleniti culpa adipisci nesciunt eveniet porro voluptatibus </a></li>
-                            <li class="blog-sidebar-item"><a href="#">Explicabo quibusdam, doloremque at reiciendi</a></li>
-                            <li class="blog-sidebar-item"><a href="#">Pariatur doloribus deleniti eligendi commodi accusantium aspernatu </a></li>
+                            <li class="blog-sidebar-item"><a href="#">Handling Conflict More Confidently</a></li>
+                            <li class="blog-sidebar-item"><a href="#">Self-Esteem and Finding Your Strengths</a></li>
+                            <li class="blog-sidebar-item"><a href="#">Building Better Relationships</a></li>
                         </ul>
                       </section>
                       <section>
                         <h3>Categories</h3>
                         <ul>
-                            <li class="blog-sidebar-item"><a href="#">dipisicing</a></li>
-                            <li class="blog-sidebar-item"><a href="#">Explicabo quibusdam</a></li>
-                            <li class="blog-sidebar-item"><a href="#">Pariatur</a></li>
+                            <li class="blog-sidebar-item"><a href="#">Mental Health</a></li>
+                            <li class="blog-sidebar-item"><a href="#">Relationships</a></li>
+                            <li class="blog-sidebar-item"><a href="#">Global Issues</a></li>
                         </ul>
                       </section>
                   </div>

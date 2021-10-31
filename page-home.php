@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
       <!-- START MAIN -->
-      <main class=site-content>
+      <main class="site-content">
         <!-- START POPUP ALERT -->
         <div id="message" class="message">
           Stay connected! <a class="popup-btn" onclick="popup()">Sign up for our newsletter!</a>
@@ -13,7 +13,7 @@
           <i class="fas fa-times-circle close" onclick="closePopup()"></i>
           <div class="row">
             <div class="col-5 mx-0 px-0 d-none d-sm-block">
-              <img class="popup-img" src="images/placeholder-img-2.png" alt="" srcset="">
+              <img class="popup-img" src="<?php bloginfo('template_url'); ?>/images/placeholder-img-2.png" alt="" srcset="">
             </div>
             <div class="col-12 col-sm-7 pl-5 py-4">
               <form action="#" class="form">
@@ -45,8 +45,8 @@
                   </div>
               </div>
               <div class="btn-wrapper d-flex flex-column align-items-center flex-md-row justify-content-center pb-5">
-                <a href="#" class="primary-btn my-3 mx-md-4">Donate</a>
-                <a href="#" class="primary-btn my-3 mx-md-4">Learn More</a>
+                <a href="https://elliebrayton.com/contact/" class="primary-btn my-3 mx-md-4">Donate</a>
+                <a href="https://elliebrayton.com/about/" class="primary-btn my-3 mx-md-4">Learn More</a>
             </div>
           </section>
           <section class="bg-white">
@@ -55,7 +55,7 @@
               <!-- TODO: Need to make Learn More Link -->
               <h2 class="text-center">People Are Our Passion</h2>
               <p class="pt-2 px-md-7 pb-7 text-center"> We are inspired by the strength of every community we visit. Our goal is to create sustainable mental health programs for these communities that will be functioning long after we’re gone.</p>
-              <div class="row justify-content-center spotlight-projects">              
+              <div class="row justify-content-center spotlight-projects ">              
               <!-- CUSTOM QUERY -->        
               <?php 
                 //Custom Query
@@ -73,7 +73,7 @@
                     $query->the_post(); 
                 ?>           
                 <!-- START IMAGE CONTAINER -->
-                <div class="col-md-6 col-lg-4 mb-md-4 mb-xl-8">
+                <div class="col-md-6 col-lg-4 mb-md-4 mb-xl-6">
                     <div class="projects-img ">
                         <a href="#"><?php 
                                 if(has_post_thumbnail()) {
@@ -100,7 +100,7 @@
                 ?> 
                 <!-- END WORDPRESS LOOP -->
               </div>
-              <a href="#" class="primary-btn mt-8 mx-auto">View Programs</a>
+              <a href="https://elliebrayton.com/programs/" class="primary-btn mx-auto">View Programs</a>
           </section>
           <section class="pb-8 textured-blue">
               <div class="container">

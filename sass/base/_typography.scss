@@ -1,0 +1,66 @@
+html {
+  font-family: museo-sans, sans-serif;
+  font-size: 59.375%;
+  //1rem = 9.5px
+  @include responsive(tab-port) {
+    font-size: 62.5%;
+    //1rem = 10px
+  }
+  @include responsive(lg-desktop) {
+    font-size: 68.75%;
+    //1rem = 11px
+  }
+
+  @include responsive(xl-desktop) {
+    font-size: 75%;
+    //1rem = 12px
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: museo-sans, sans-serif;
+}
+
+h1 {
+  position: relative;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 130%;
+  z-index: 2;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #678ba0;
+  padding: 0 0 0.8rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--teal);
+  padding: 0 0 0.8rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #67cbe0;
+  padding: 0 0 0.8rem;
+}
+p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 300;
+  padding: 0 0 1.5rem;
+  color: #3f4b52;
+  @include responsive(desktop) {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+}

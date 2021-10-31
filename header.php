@@ -24,28 +24,27 @@
   <!-- START BODY -->
   <body <?php body_class(); ?> class="site">
       <!-- START HEADER -->
+      <div class="translator"><?php dynamic_sidebar('translator-plugin'); ?></div>
       <header class="header">
         <div class="container">
-
-        <!-- TODO: This is where logo and navigation will go  -->
-        <div class="logo-box"><img src="images/logo.svg" width="200" alt="IMHA logo" title="logo" class="logo"></div>
+        <div class="logo-box"><img src="<?php bloginfo('template_url'); ?>/images/logo.svg" width="200" alt="IMHA logo" title="logo" class="logo"></div>
           <button class="hamburger" id="hamburger">
             <span class="line top"></span>
             <span class="line middle"></span>
             <span class="line bottom"></span>
           </button>
-          <!-- NOTE: Created hamburger button instead of icon -->
-        <!-- <button id="bars" class="top-right" type="button"><i class="fas fa-bars"></i></button>
-			  <button id="cross" class="top-right hide-button" type="button"><i class="fas fa-times"></i></button> -->
         <nav id="navigation">
-          <ul>
-            <li><a class="nav-link" href="index.html">Home</a></li>
-            <li><a class="nav-link" href="about.html">About Us</a></li>
-            <li><a class="nav-link" href="programs.html">Our Programs</a></li>
-            <li><a class="nav-link" href="blog.html">Blog</a></li>
-            <li><a class="nav-link" href="contact.html">Contact</a></li>
-            <li><a class="nav-cta secondary-btn my-3 mx-md-4" href="donate.html">Donate</a></li>
-          </ul>
+          <?php $defaults=array(
+                          'theme_location'    => 'header-nav',
+                          'container'         => '',
+                          'container_id'      => 'navigation',
+                          'container_class'   => '',
+                          'menu_id'           => false,
+                          'menu_class' => '',
+                          'depth'             => 0
+                      );
+                      wp_nav_menu($defaults);?>
+                              <a class="nav-cta secondary-btn my-3 mx-md-4" href="https://elliebrayton.com/contact/">Donate</a>
         </nav>
         <!-- from seperate branch test -->
             </div>

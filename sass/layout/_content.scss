@@ -1,157 +1,212 @@
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
 // About Us page header
 .about-us {
-    background-image: url("images/rainbow-sequins.jpg");
+  background-image: url('images/rainbow-sequins.jpg');
+}
+
+.our-programs {
+  background-image: url('images/colored-knots.jpg');
 }
 
 .heading1 {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 15vw;
-    max-height: 200px;
-    min-height: 100px;
-    .heading-gradient {
-        position: relative;
-        height: inherit;
-        width: inherit;
-        max-height: inherit;
-        min-height: inherit;
-        background-image: linear-gradient(#00000000, #565e63e1);
-        h1 {
-            color: white;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            padding-bottom: 20px;
-            text-align: center;
-        }
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 15vw;
+  max-height: 200px;
+  min-height: 100px;
+  .heading-gradient {
+    position: relative;
+    height: inherit;
+    width: inherit;
+    max-height: inherit;
+    min-height: inherit;
+    background-image: linear-gradient(#00000000, #565e63e1);
+    h1 {
+      color: white;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding-bottom: 20px;
+      text-align: center;
     }
+  }
 }
 
 // Responsive Youtube video embed
 .embed-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    margin-top: 20px;
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 20px;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 // Our Mission section
 
 .image-block img {
-    width: 100%;
+  width: 100%;
 }
 
 .emphasis {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .watercolor-bg {
-    background-image: url("images/aqua-span.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 95px 5px;
-    p {
-        color: #ffffff;
-    }
+  background-image: url('images/aqua-span.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 95px 5px;
+  p {
+    color: #ffffff;
+  }
 }
 
 // Our Values section
 
 .our-values {
-    max-width: 600px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  .value {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    text-align: center;
-    .value {
-        width: 300px;
-        height: 300px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .flip-card-inner {
+      .flip-card-back {
+        p {
+          width: 230px;
+        }
+      }
+      .flip-card-front {
+        .light-text {
+          color: #ffffff;
+        }
+        .dark-text {
+          color: #3f4b52;
+        }
+      }
+      .flip-card-back,
+      .flip-card-front {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: auto;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        .flip-card-inner {
-            .flip-card-back {
-                p {
-                    width: 230px;
-                }
-            }
-            .flip-card-front {
-                .light-text {
-                    color: #ffffff;
-                }
-                .dark-text {
-                    color: #3f4b52;
-                }
-            }
-            .flip-card-back, .flip-card-front {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .light-text {
-                    color: #ffffff;
-                }
-                .dark-text {
-                    color: #3f4b52;
-                }
-            }
+        .light-text {
+          color: #ffffff;
         }
+        .dark-text {
+          color: #3f4b52;
+        }
+      }
     }
-    .circle1 {
-        background-image: url("images/aqua-circle.png");
-    }
-    .circle2 {
-        background-image: url("images/coral-circle.png");
-    }
-    .circle3 {
-        background-image: url("images/lime-circle.png");
-    }
-    .circle4 {
-        background-image: url("images/blue-circle.png");
-    }
+  }
+  .circle1 {
+    background-image: url('images/aqua-circle.png');
+  }
+  .circle2 {
+    background-image: url('images/coral-circle.png');
+  }
+  .circle3 {
+    background-image: url('images/lime-circle.png');
+  }
+  .circle4 {
+    background-image: url('images/blue-circle.png');
+  }
 }
 
 // Animations
 
-@media(min-width: 1200px) {
-    .value {
-        background-color: transparent;
-      }
-      
-      .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 1s;
-        transform-style: preserve-3d;
-      }
-      
-      .value:hover .flip-card-inner {
-        transform: rotateY(180deg);
-      }
-      
-      .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-      }
-      
-      .flip-card-back {
-        transform: rotateY(180deg);
-      }
+@media (min-width: 1200px) {
+  .value {
+    background-color: transparent;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+
+  .value:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+}
+
+//Blog
+.blog {
+  display: flex !important;
+  text-align: left !important;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include responsive(desktop) {
+    &:hover img {
+      filter: none !important;
+    }
+  }
+}
+
+.blog-link {
+  color: inherit;
+  &:hover {
+    color: var(--background-dark);
+  }
+}
+.pagination {
+  width: 30rem;
+  margin: auto;
+}
+.pagination-link:link,
+.pagination-link:visited {
+  display: block;
+  color: var(--coral);
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 10rem;
+  text-align: center;
+  letter-spacing: 0.1px;
+  border: 1px var(--coral) solid;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem 0.2rem;
+  transition: 0.2s all;
+  &:hover {
+    background: var(--coral);
+    color: white;
+  }
 }

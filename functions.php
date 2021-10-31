@@ -20,7 +20,9 @@ function custom_theme_scripts(){
 
         wp_enqueue_script('slider-js', get_stylesheet_directory_uri() . '/js/slider.js', array('jquery'), NULL, true ); 
 
-    
+        wp_enqueue_script('slider-js', get_stylesheet_directory_uri() . '/js/lightbox-plus-jquery.min.js', array('jquery'), NULL, true ); 
+
+
 
 
     //MAIN STYLESHEET
@@ -33,6 +35,15 @@ add_theme_support('post-thumbnails');
 
 add_action('wp_enqueue_scripts', 'custom_theme_scripts');
 
+function register_my_menus(){
+    register_nav_menus( array(
+        'header-nav' => __('Header Navigation'),
+        'footer-nav' => __('Footer Navigation')
+    ));
+}
+
+add_action( 'init', 'register_my_menus' );
+
 register_sidebar(array(
     'name' => ('IG Plugin'),
     'id' => 'ig-plugin',
@@ -41,4 +52,12 @@ register_sidebar(array(
         'after_widget' => '</div>'
     ));
 
+    register_sidebar(array(
+        'name' => ('Translator'),
+        'id' => 'translator-plugin',
+        'description' => 'Widget Space for Translator',
+        'before_widget' => '<div class="translator">',
+            'after_widget' => '</div>'
+        ));
+    
 ?>
