@@ -44,15 +44,26 @@
         flex-direction: column;
         align-items: center;
         font-weight: 700;
-        .sub-nav {
-          flex-direction: column;
-          margin-bottom: 20px;
-        }
         li {
           list-style-type: none;
-          margin: 5px 0;
+          margin: 10px 10px;
+          a {
+            display: block;
+            text-align: center;
+            @media(min-width: 850px) {
+              text-align: left;
+            }
+          }
           @include responsive(tab-land) {
             margin-right: 30px !important;
+          }
+          .sub-menu {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0;
+            li {
+              margin: 5px 0 0;
+            }
           }
         }
       }
@@ -61,14 +72,10 @@
           flex-direction: row;
           align-items: flex-start;
           margin-top: 20px;
-          .sub-nav {
-            margin: 0 20px;
-            li {
-              margin-bottom: 10px;
-            }
-          }
           li {
-            margin: 0;
+            .sub-menu {
+              align-items: flex-start;
+            }
           }
         }
       }
